@@ -1,0 +1,58 @@
+
+.header {
+  background-color: var(--color-fondo);
+  padding: 20px 6%;
+  border-bottom: 1px solid rgba(99, 47, 57, 0.12);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-logo {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: var(--color-hover);
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-logo {
+    font-size: 22px;
+  }
+
+  .header-nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
