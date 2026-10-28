@@ -1,0 +1,70 @@
+
+.producto {
+  background-color: var(--color-tarjeta);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(99, 47, 57, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+}
+
+.producto-informacion {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.producto-informacion h3 {
+  margin: 0;
+  color: var(--color-texto);
+  font-size: 21px;
+}
+
+.producto-informacion p {
+  margin: 0;
+  color: #68565a;
+  line-height: 1.5;
+}
+
+.producto-precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-texto);
+}
+
+.producto-boton {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px;
+  border-radius: 25px;
+  background-color: var(--color-primario);
+  color: var(--color-texto);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.producto-boton:hover {
+  background-color: var(--color-hover);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .producto-imagen {
+    height: 230px;
+  }
+}
