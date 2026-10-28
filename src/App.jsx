@@ -1,5 +1,6 @@
 
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import "./App.css";
 
 function App() {
@@ -8,10 +9,7 @@ function App() {
       <Header />
 
       <main>
-        <section id="inicio">
-          <h1>Bienvenidos a Flores Eternas</h1>
-          <p>Ramos únicos para momentos especiales.</p>
-        </section>
+        <Hero />
 
         <section id="catalogo">
           <h2>Nuestros ramos</h2>
