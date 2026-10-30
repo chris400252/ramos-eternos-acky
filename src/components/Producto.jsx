@@ -9,7 +9,7 @@ function Producto({ nombre, descripcion, precio, imagen }) {
   );
 
   // Reemplazar por el número real del emprendimiento
-  const telefono = "569XXXXXXXX";
+  const telefono = "56934515158";
 
   const whatsapp = `https://wa.me/${telefono}?text=${mensaje}`;
 

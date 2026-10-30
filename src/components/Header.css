@@ -1,6 +1,6 @@
 
 .header {
-  background-color: var(--color-fondo);
+  background-color: var(--color-fucsia);
   padding: 20px 6%;
   border-bottom: 1px solid rgba(99, 47, 57, 0.12);
 }
@@ -15,7 +15,7 @@
 }
 
 .header-logo {
-  color: var(--color-texto);
+  color: var(--color-fondo);
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
@@ -29,7 +29,7 @@
 }
 
 .header-nav a {
-  color: var(--color-texto);
+  color: var(--color-fondo);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
