@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Inicio from "./pages/Inicio";
 import Catalogo from "./pages/Catalogo";
 import Footer from "./components/Footer";
+import Contacto from "./pages/Contacto";
 import "./App.css";
 
 function App() {
@@ -15,13 +16,7 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/catalogo" element={<Catalogo />} />
           <Route
-            path="/contacto"
-            element={
-              <section>
-                <h1>Contacto</h1>
-                <p>Pronto agregaremos nuestros medios de contacto.</p>
-              </section>
-            }
+            path="/contacto" element={<Contacto />}
           />
         </Routes>
       </main>

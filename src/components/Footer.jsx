@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import "./Footer.css";
+import instagramIcon from "../assets/Instagram_logo_2016.svg.webp";
+import whatsappIcon from "../assets/Whatsapp.svg.webp";
 
 function Footer() {
   return (
@@ -18,8 +20,27 @@ function Footer() {
         </nav>
 
         <div>
-          <h3>Contacto</h3>
-          <p>Encuéntranos en WhatsApp e Instagram.</p>
+  <h3>Síguenos y contáctanos</h3>
+
+  <div className="footer-redes">
+    <a
+      href="https://www.instagram.com/ramos.eternos_acky/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visitar nuestro Instagram"
+    >
+      <img src={instagramIcon} alt="" />
+    </a>
+
+    <a
+      href="https://wa.me/56934515158"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactarnos por WhatsApp"
+    >
+      <img src={whatsappIcon} alt="" />
+    </a>
+  </div>
         </div>
       </div>
 

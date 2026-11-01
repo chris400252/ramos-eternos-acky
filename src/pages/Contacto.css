@@ -1,0 +1,68 @@
+.contacto {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  color: #68313b;
+  text-align: center;
+}
+
+.contacto h1 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.contacto-descripcion {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.contacto-opciones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.contacto-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  background-color: #fff7f7;
+  border-radius: 24px;
+}
+
+.contacto-tarjeta h2 {
+  margin: 0 0 16px;
+}
+
+.contacto-tarjeta p {
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+.contacto-boton {
+  display: inline-block;
+  margin-top: auto;
+  padding: 14px 24px;
+  border-radius: 30px;
+  background-color: #ff8b85;
+  color: #54252e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contacto-boton:hover {
+  background-color: #ff7972;
+}
+
+.contacto-boton:focus-visible {
+  outline: 3px solid #68313b;
+  outline-offset: 4px;
+}
+
+@media (max-width: 650px) {
+  .contacto-opciones {
+    grid-template-columns: 1fr;
+  }
+}
