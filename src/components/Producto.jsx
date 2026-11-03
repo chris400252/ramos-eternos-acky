@@ -1,14 +1,15 @@
 
 import "./Producto.css";
+import { Link } from "react-router";
 
-function Producto({ nombre, descripcion, precio, imagen }) {
+function Producto({ id, nombre, descripcion, precio, imagen }) {
   const precioFormateado = precio.toLocaleString("es-CL");
 
   const mensaje = encodeURIComponent(
     `¡Hola! Quisiera consultar por el ${nombre}, cuyo precio es $${precioFormateado}.`
   );
 
-  // Reemplazar por el número real del emprendimiento
+  
   const telefono = "56934515158";
 
   const whatsapp = `https://wa.me/${telefono}?text=${mensaje}`;
@@ -23,7 +24,11 @@ function Producto({ nombre, descripcion, precio, imagen }) {
       />
 
       <div className="producto-informacion">
-        <h3>{nombre}</h3>
+        <h3>
+         <Link to={`/catalogo/${id}`} className="producto-nombre-link">
+          {nombre}
+          </Link>
+        </h3>
         <p>{descripcion}</p>
 
         <span className="producto-precio">

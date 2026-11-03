@@ -11,6 +11,7 @@ function Catalogo() {
         {productos.map((producto) => (
           <Producto
             key={producto.id}
+            id={producto.id}
             nombre={producto.nombre}
             descripcion={producto.descripcion}
             precio={producto.precio}

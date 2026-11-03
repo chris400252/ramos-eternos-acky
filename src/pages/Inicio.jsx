@@ -15,6 +15,7 @@ function Inicio() {
           {productos.slice(0, 3).map((producto) => (
             <Producto
               key={producto.id}
+              id={producto.id}
               nombre={producto.nombre}
               descripcion={producto.descripcion}
               precio={producto.precio}

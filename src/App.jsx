@@ -4,6 +4,7 @@ import Inicio from "./pages/Inicio";
 import Catalogo from "./pages/Catalogo";
 import Footer from "./components/Footer";
 import Contacto from "./pages/Contacto";
+import DetalleProducto from "./pages/DetalleProducto";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route
             path="/contacto" element={<Contacto />}
           />
+          <Route path="/catalogo/:id" element={<DetalleProducto />} />
         </Routes>
       </main>
 

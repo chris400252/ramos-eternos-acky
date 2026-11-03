@@ -1,0 +1,56 @@
+.detalle-producto {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: #68313b;
+}
+
+.detalle-volver {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: inherit;
+}
+
+.detalle-contenido {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.detalle-imagen {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.detalle-informacion h1 {
+  margin-top: 0;
+}
+
+.detalle-informacion p {
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.detalle-precio {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.detalle-whatsapp {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 30px;
+  background-color: #ff8b85;
+  color: #54252e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .detalle-contenido {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
