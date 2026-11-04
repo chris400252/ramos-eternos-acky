@@ -6,6 +6,7 @@ export const productos = [
     descripcion: "Ramo de flores eternas, hecho a mano.",
     precio: 7000,
     imagen: "rosas-y-girasol.jpeg",
+    categoria: "mixtos",
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const productos = [
     descripcion: "Un detalle especial para regalar amor.",
     precio: 10000,
     imagen: "Rosas-de-jabon.jpeg",
+    categoria: "rosas",
   },
   {
     id: 3,
@@ -20,13 +22,15 @@ export const productos = [
     descripcion: "Personaliza los colores de tus flores eternas.",
     precio: 20000,
     imagen: "Girasoles.jpeg",
+    categoria: "girasoles",
   },
   {
     id: 4,
-    nombre: "Ramo girasoles de jabon + Corazon",
+    nombre: "Ramo girasoles de jabon",
     descripcion: "Ramo con girasoles aromaticos. El corazon es un extra.",
     precio: 6000,
     imagen:"girasol-corazon.jpeg",
+    categoria: "girasoles",
   },
    {
     id: 5,
@@ -34,6 +38,7 @@ export const productos = [
     descripcion: "Ramo de 7 rosas.",
     precio: 6000,
     imagen:"morada-blanca.jpeg",
+    categoria: "rosas",
   },
    {
     id: 6,
@@ -41,6 +46,7 @@ export const productos = [
     descripcion: "Ramos más ambiciosos",
     precio: 16000,
     imagen:"ramo-morado.jpeg",
+    categoria: "rosas"
   },
    {
     id: 7,
@@ -48,6 +54,7 @@ export const productos = [
     descripcion: ".",
     precio: 6500,
     imagen:"rosas-celeste-blanca.jpeg",
+    categoria: "rosas",
   },
    {
     id: 8,
@@ -55,6 +62,7 @@ export const productos = [
     descripcion: "..",
     precio: 6500,
     imagen:"rosas-diferente-tono.jpeg",
+    categoria: "rosas",
   },
   
   
