@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router";
 import { productos } from "../data/Producto";
+import ExtrasProducto from "../components/ExtrasProducto";
 import "./DetalleProducto.css";
 
 function DetalleProducto() {
@@ -45,25 +46,17 @@ function DetalleProducto() {
         />
 
         <div className="detalle-informacion">
-          <h1>{producto.nombre}</h1>
+  <h1>{producto.nombre}</h1>
 
-          <p>
-            {producto.descripcionLarga || producto.descripcion}
-          </p>
+  <p>
+    {producto.descripcionLarga || producto.descripcion}
+  </p>
 
-          <p className="detalle-precio">
-            ${precioFormateado}
-          </p>
-
-          <a
-            href={whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="detalle-whatsapp"
-          >
-            Consultar por WhatsApp
-          </a>
-        </div>
+  <ExtrasProducto
+    key={producto.id}
+    producto={producto}
+  />
+</div>
       </div>
     </section>
   );

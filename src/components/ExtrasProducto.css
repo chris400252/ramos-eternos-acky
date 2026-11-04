@@ -1,0 +1,52 @@
+.extras-lista {
+  min-width: 0;
+  margin: 24px 0;
+  padding: 0;
+  border: none;
+}
+
+.extras-lista legend {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.extra-opcion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #68313b25;
+  cursor: pointer;
+}
+
+.extra-opcion input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  accent-color: #68313b;
+}
+
+.extra-nombre {
+  flex: 1;
+  min-width: 0;
+}
+
+.extra-opcion > span:last-child {
+  white-space: nowrap;
+}
+
+.extras-resumen {
+  margin: 24px 0;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #fff7f7;
+}
+
+.extras-resumen p {
+  margin: 6px 0;
+}
+
+.extras-total {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
