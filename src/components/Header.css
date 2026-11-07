@@ -1,8 +1,18 @@
-
+/* ── Header ── */
 .header {
-  background-color: var(--color-fucsia);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(104, 49, 59, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 20px 6%;
   border-bottom: 1px solid rgba(99, 47, 57, 0.12);
+  transition: box-shadow 0.3s;
+}
+
+.header:hover {
+  box-shadow: 0 2px 20px rgba(104, 49, 59, 0.25);
 }
 
 .header-container {
@@ -13,6 +23,7 @@
   justify-content: space-between;
   gap: 20px;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -23,12 +34,29 @@
   color: var(--color-fondo);
   text-decoration: none;
   font-weight: 500;
+  position: relative;
   transition: color 0.2s ease;
 }
 
-.header-nav a:hover {
-  color: var(--color-hover);
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primario);
+  transition: width 0.3s ease;
 }
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+.header-nav a:hover {
+  color: var(--color-primario);
+}
+
 .header-logo {
   font-family: Georgia, serif;
   color: var(--color-fondo);

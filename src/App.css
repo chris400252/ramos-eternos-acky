@@ -53,6 +53,25 @@ main p {
   text-align: center;
 }
 
+/* ── Sección Últimas Ventas ── */
+.ultimas-ventas {
+  padding: 80px 6%;
+  background-color: var(--color-tarjeta);
+  text-align: center;
+}
+
+.ultimas-ventas h2 {
+  font-size: 36px;
+  color: var(--color-texto);
+  margin-bottom: 8px;
+}
+
+.ultimas-ventas > p {
+  color: var(--color-texto-secundario);
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
 @media (max-width: 900px) {
   .catalogo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -64,7 +83,8 @@ main p {
     grid-template-columns: 1fr;
   }
 
-  .catalogo h2 {
+  .catalogo h2,
+  .ultimas-ventas h2 {
     font-size: 29px;
   }
 }

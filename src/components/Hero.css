@@ -1,4 +1,16 @@
+/* ── Animación de entrada ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* ── Hero ── */
 .hero {
   display: flex;
   align-items: center;
@@ -12,6 +24,7 @@
 .hero-contenido {
   flex: 1;
   max-width: 550px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .hero-contenido h1 {
@@ -34,17 +47,19 @@
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 .hero-boton:hover {
   background-color: var(--color-hover);
   color: white;
+  transform: translateY(-2px);
 }
 
 .hero-imagen {
   flex: 1;
   max-width: 450px;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
 
 .hero-imagen img {
@@ -71,6 +86,7 @@
     width: 100%;
   }
 }
+
 .hero-acciones {
   display: flex;
   flex-wrap: wrap;

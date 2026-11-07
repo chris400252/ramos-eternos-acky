@@ -7,7 +7,7 @@ function Inicio() {
     <>
       <Hero />
 
-      <section>
+      <section className="ultimas-ventas">
         <h2>Últimas ventas</h2>
         <p>Busca el ramo ideal para las personas que quieres.</p>
 
