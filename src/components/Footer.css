@@ -1,8 +1,8 @@
 .footer {
   margin-top: 64px;
   padding: 48px 24px 20px;
-  background-color: #68313b;
-  color: #fff5f5;
+  background-color: var(--color-fucsia);
+  color: var(--color-tarjeta);
 }
 
 .footer-contenido {
@@ -36,7 +36,7 @@
 }
 
 .footer a:focus-visible {
-  outline: 2px solid #ffd8d8;
+  outline: 2px solid var(--color-fondo);
   outline-offset: 4px;
 }
 

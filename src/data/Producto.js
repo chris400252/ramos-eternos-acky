@@ -42,7 +42,7 @@ export const productos = [
   },
    {
     id: 6,
-    nombre: "Ramo morado grande",
+    nombre: "Ramo rosas moradas",
     descripcion: "Ramos más ambiciosos",
     precio: 16000,
     imagen:"ramo-morado.jpeg",
@@ -62,6 +62,14 @@ export const productos = [
     descripcion: "..",
     precio: 6500,
     imagen:"rosas-diferente-tono.jpeg",
+    categoria: "rosas",
+  },
+  {
+    id: 9,
+    nombre: "Ramo de rosas",
+    descripcion: "Ramo XL de 50 rosas",
+    precio: 40000,
+    imagen: "ramo-50-lejos.jpeg",
     categoria: "rosas",
   },
   

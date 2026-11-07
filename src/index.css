@@ -2,9 +2,12 @@
 :root {
   --color-fondo: #ffd8d8;
   --color-primario: #ff8b85;
+  --color-primario-hover: #ff7972;
   --color-tarjeta: #fff7f5;
   --color-hover: #c95e62;
+  --color-hover-suave: #fff0f0;
   --color-texto: #632f39;
+  --color-texto-secundario: #68565a;
   --color-blanco: #ffffff;
   --color-fucsia: #68313b;
 }
@@ -22,10 +25,19 @@ body {
   min-width: 320px;
   background-color: var(--color-fondo);
   color: var(--color-texto);
-  font-family: Arial, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
-button, a {
+h1,
+h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+button,
+a,
+input,
+select {
   font: inherit;
 }
 

@@ -68,6 +68,17 @@ function ExtrasProducto({ producto }) {
               onChange={() => cambiarExtra(extra.id)}
             />
 
+          {extra.imagen && (
+  <img
+    src={`${import.meta.env.BASE_URL}images/${extra.imagen}`}
+    alt=""
+    className="extra-imagen"
+    width={56}
+    height={56}
+    loading="lazy"
+  />
+)}
+
             <span className="extra-nombre">{extra.nombre}</span>
             <span>+{formatoPrecio(extra.precio)}</span>
           </label>

@@ -87,16 +87,16 @@
 
 .hero-acciones .hero-boton-secundario {
   background-color: transparent;
-  border: 2px solid #68313b;
-  color: #68313b;
+  border: 2px solid var(--color-fucsia);
+  color: var(--color-fucsia);
 }
 
 .hero-acciones .hero-boton-secundario:hover {
-  background-color: #fff0f0;
+  background-color: var(--color-hover-suave);
 }
 
 .hero-acciones .hero-boton:focus-visible {
-  outline: 2px solid #68313b;
+  outline: 2px solid var(--color-fucsia);
   outline-offset: 4px;
 }
 

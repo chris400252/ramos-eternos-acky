@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="header-logo">
-          Flores Eternas 🌸
+          Ramos eternos Acky
         </Link>
 
         <nav className="header-nav" aria-label="Navegación principal">

@@ -12,7 +12,7 @@
 }
 
 .catalogo-campo label {
-  color: #68313b;
+  color: var(--color-fucsia);
   font-weight: 700;
 }
 
@@ -22,31 +22,31 @@
   width: 100%;
   min-width: 0;
   padding: 12px;
-  border: 1px solid #68313b60;
+  border: 1px solid rgba(104, 49, 59, 0.38);
   border-radius: 12px;
-  background-color: #fff7f7;
-  color: #68313b;
+  background-color: var(--color-tarjeta);
+  color: var(--color-fucsia);
   font: inherit;
 }
 
 .catalogo-limpiar {
   padding: 10px 18px;
-  border: 1px solid #68313b;
+  border: 1px solid var(--color-fucsia);
   border-radius: 12px;
   background-color: transparent;
-  color: #68313b;
+  color: var(--color-fucsia);
   font: inherit;
   cursor: pointer;
 }
 
 .catalogo-limpiar:hover {
-  background-color: #fff7f7;
+  background-color: var(--color-tarjeta);
 }
 
 .catalogo-campo select:focus-visible,
 .catalogo-campo input:focus-visible,
 .catalogo-limpiar:focus-visible {
-  outline: 2px solid #68313b;
+  outline: 2px solid var(--color-fucsia);
   outline-offset: 3px;
 }
 
@@ -57,7 +57,7 @@
 .catalogo-vacio {
   padding: 32px 16px;
   border-radius: 16px;
-  background-color: #fff7f7;
+  background-color: var(--color-tarjeta);
   text-align: center;
 }
 

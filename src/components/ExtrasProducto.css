@@ -15,7 +15,7 @@
   align-items: center;
   gap: 12px;
   padding: 14px 0;
-  border-bottom: 1px solid #68313b25;
+  border-bottom: 1px solid rgba(104, 49, 59, 0.15);
   cursor: pointer;
 }
 
@@ -23,7 +23,7 @@
   width: 20px;
   height: 20px;
   flex-shrink: 0;
-  accent-color: #68313b;
+  accent-color: var(--color-fucsia);
 }
 
 .extra-nombre {
@@ -39,7 +39,7 @@
   margin: 24px 0;
   padding: 16px;
   border-radius: 16px;
-  background-color: #fff7f7;
+  background-color: var(--color-tarjeta);
 }
 
 .extras-resumen p {
@@ -49,4 +49,13 @@
 .extras-total {
   font-size: 1.4rem;
   font-weight: 700;
+}
+.extra-imagen {
+  display: block;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: var(--color-tarjeta);
 }

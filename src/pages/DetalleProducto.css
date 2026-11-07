@@ -2,7 +2,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 24px;
-  color: #68313b;
+  color: var(--color-fucsia);
 }
 
 .detalle-volver {
@@ -42,10 +42,21 @@
   display: inline-block;
   padding: 16px 24px;
   border-radius: 30px;
-  background-color: #ff8b85;
-  color: #54252e;
+  background-color: var(--color-primario);
+  color: var(--color-fucsia);
   font-weight: 700;
   text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.detalle-whatsapp:hover {
+  background-color: var(--color-hover);
+  color: var(--color-blanco);
+}
+
+.detalle-whatsapp:focus-visible {
+  outline: 3px solid var(--color-fucsia);
+  outline-offset: 4px;
 }
 
 @media (max-width: 700px) {
