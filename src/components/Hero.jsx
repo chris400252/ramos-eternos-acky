@@ -29,6 +29,8 @@ function Hero() {
           a ambas partes.
         </p>
 
+        <p>Tambien realizamos envios a domicilio con costo adicional segun distancia.</p>
+
         <div className="hero-acciones">
           <Link to="/catalogo" className="hero-boton">
             Explorar catálogo

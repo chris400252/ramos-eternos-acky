@@ -8,7 +8,7 @@ function Inicio() {
       <Hero />
 
       <section className="ultimas-ventas">
-        <h2>Últimas ventas</h2>
+        <h2>Lo más vendido</h2>
         <p>Busca el ramo ideal para las personas que quieres.</p>
 
         <div className="catalogo-grid">

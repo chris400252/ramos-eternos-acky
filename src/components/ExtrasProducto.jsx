@@ -4,6 +4,7 @@ import "./ExtrasProducto.css";
 
 function ExtrasProducto({ producto }) {
   const [seleccionados, setSeleccionados] = useState([]);
+  const [imagenAmpliada, setImagenAmpliada] = useState(null);
 
   function cambiarExtra(id) {
     setSeleccionados((anteriores) =>
@@ -71,11 +72,20 @@ function ExtrasProducto({ producto }) {
           {extra.imagen && (
   <img
     src={`${import.meta.env.BASE_URL}images/${extra.imagen}`}
-    alt=""
+    alt={extra.nombre}
     className="extra-imagen"
     width={56}
     height={56}
     loading="lazy"
+    onClick={(e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      setImagenAmpliada({
+        src: `${import.meta.env.BASE_URL}images/${extra.imagen}`,
+        alt: extra.nombre,
+      });
+    }}
+    title="Clic para ampliar"
   />
 )}
 
@@ -101,6 +111,32 @@ function ExtrasProducto({ producto }) {
       >
         Consultar por WhatsApp
       </a>
+
+      {imagenAmpliada && (
+        <div
+          className="extra-modal-overlay"
+          onClick={() => setImagenAmpliada(null)}
+        >
+          <div
+            className="extra-modal-contenido"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="extra-modal-cerrar"
+              onClick={() => setImagenAmpliada(null)}
+              aria-label="Cerrar imagen"
+            >
+              ✕
+            </button>
+            <img
+              src={imagenAmpliada.src}
+              alt={imagenAmpliada.alt}
+              className="extra-modal-img"
+            />
+            <p className="extra-modal-nombre">{imagenAmpliada.alt}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

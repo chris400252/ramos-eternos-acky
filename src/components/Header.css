@@ -64,6 +64,19 @@
   font-size: 24px;
   font-weight: bold;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-logo-imagen {
+  width: 52px;
+  height: 52px;
+  padding: 5px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border: 1px solid rgba(99, 47, 57, 0.15);
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(99, 47, 57, 0.18);
 }
 
 /* Adaptación para celulares */

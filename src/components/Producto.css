@@ -12,6 +12,12 @@
   box-shadow: 0 12px 40px rgba(99, 47, 57, 0.18);
 }
 
+.producto-imagen-link {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .producto-imagen {
   display: block;
   width: 100%;

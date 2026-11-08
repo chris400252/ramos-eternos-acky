@@ -58,4 +58,88 @@
   object-fit: contain;
   border-radius: 8px;
   background-color: var(--color-tarjeta);
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.extra-imagen:hover {
+  transform: scale(1.15);
+  box-shadow: 0 2px 12px rgba(104, 49, 59, 0.25);
+}
+
+/* ── Modal / Lightbox ── */
+
+.extra-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  animation: extra-fadeIn 0.25s ease;
+  padding: 24px;
+}
+
+.extra-modal-contenido {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  animation: extra-scaleIn 0.25s ease;
+}
+
+.extra-modal-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.extra-modal-cerrar:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.extra-modal-img {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  background-color: #faf5f0;
+}
+
+.extra-modal-nombre {
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--color-oscuro, #3a1c23);
+  background-color: #fff;
+}
+
+@keyframes extra-fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes extra-scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
 }
